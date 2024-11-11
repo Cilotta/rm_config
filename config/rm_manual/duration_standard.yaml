@@ -40,7 +40,7 @@ rm_manual:
     gyro_move_reduction: 0.4
     gyro_rotate_reduction: 0.8
   gimbal:
-    topic: "/controllers/gimbal_controller/command"
+    topic: "/controllers/stack_yaw_gimbal_controller/command"
     max_yaw_vel: 12.56
     max_pitch_vel: 8.37
     gimbal_scale: 8.0
@@ -97,7 +97,7 @@ rm_manual:
     main_controllers:
       - controllers/chassis_controller
       - controllers/orientation_controller
-      - controllers/gimbal_controller
+      - controllers/stack_yaw_gimbal_controller
       - controllers/shooter_controller
       - controllers/cover_controller
     calibration_controllers:

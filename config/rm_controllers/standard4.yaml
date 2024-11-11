@@ -76,8 +76,8 @@ controllers:
     frame_source: "odom"
     frame_target: "base_link"
 
-  gimbal_controller:
-    type: rm_gimbal_controllers/Controller
+  dual_stage_gimbal_controller:
+    type: rm_gimbal_controllers/DualStageController
     yaw:
       joint: "yaw_joint"
       pid: { p: 0.4, i: 15.0, d: 0.0, i_clamp_max: 0.1, i_clamp_min: -0.1, antiwindup: true, publish_state: true }
